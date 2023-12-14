@@ -1,3 +1,3 @@
 FROM tomcat:latest
-RUN cp -R /apache-tomcat-9.0.83/webapps/* /usr/local/tomcat/webapps
+RUN cp -r /apache-tomcat-9.0.83/webapps/ /usr/local/tomcat/webapps
 COPY /var/lib/jenkins/workspace/p3/target/*.war /usr/local/tomcat/webapps
